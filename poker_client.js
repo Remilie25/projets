@@ -1,4 +1,4 @@
-
+//copyright 2023 DE PRETTO REMI
 
 function test(){ 									// pour tester des trucs tout ça tout ça
 	var x = document.getElementById("T1");
