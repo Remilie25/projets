@@ -1,3 +1,4 @@
+#copyright 2023 DE PRETTO REMI
 import ssl
 from random import randint
 import asyncio
