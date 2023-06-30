@@ -1,3 +1,5 @@
+#copyright 2023 DE PRETTO REMI
+
 from secrets import randbelow
 import math
 from random import randint
