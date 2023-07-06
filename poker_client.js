@@ -185,7 +185,7 @@ function trunc(n){			//F° tronque les float à 3 chiffres après la virgule | f
 	return nc
 }
 
-function sleep(ms) {													//permet de retarder js (car s'execute avant la PUTAIN DE PAGE HTML)
+function sleep(ms) {													//permet de retarder js (car s'execute avant la DE PAGE HTML)
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -429,7 +429,7 @@ function refresh(J){												// refresh toutes les infos dès que le serv les
 		info[3]=0
 		convert();		
 		for (var i=0;i<BS.length; i++){
-			//console.log("putain")
+			//console.log("punaise")
 			document.getElementById(cp[i]).innerHTML = BS[i]};
 		return}	
 	//console.log(J["type"]=="J")
