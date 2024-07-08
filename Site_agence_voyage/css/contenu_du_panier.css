@@ -1,0 +1,106 @@
+/* HEADER
+Description : "contenu du panier" is a page where customers can see what they are about to book. Here is its style.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: lightblue;
+}
+
+h1{
+    text-transform: capitalize;
+}
+
+h2{
+    text-transform: capitalize;
+}
+
+.header{
+    justify-content: flex-start;
+}
+
+.footer{
+    justify-content: flex-end ;
+}
+
+.dest_list{
+    margin-left: -5%;
+    margin-right: -5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dest_in_basket{
+    padding: 2%;
+    justify-content: flex-start;
+    margin: 1%;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.dest_data{
+    display: grid;
+    gap: 0.5%;
+    grid-template-columns: 30% 1fr 1%;
+}
+
+.desc{
+    margin-left: 1%;
+}
+
+.preview_picture{
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+
+.del_travel{
+    height: 10%;
+    background-color: red;
+    color: white;
+}
+
+
+button{
+    text-align: center;
+    border-radius: 10px;
+}
+
+#pay{
+    width: 4%;
+    background-color: orange;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#pay > p{
+    color: black;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

@@ -1,0 +1,27 @@
+/* HEADER
+Description : "footer". Here is its style.
+Date : 22/12/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : Beginning */
+
+*{
+    font-family: "Optima", sans-serif;
+    
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style: solid;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+}

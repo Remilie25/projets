@@ -1,0 +1,70 @@
+<!--HEADER
+Description : "Confirmation de commande" is a page where customers can confirm their purchase.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : Beginning-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de commande</title>
+    <link rel="stylesheet" href="../css/confirmation_de_commande.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/confiramation_de_commande.js" defer></script>
+</head>
+<body>
+
+    <header></header>
+    
+    <section>
+        <h1>Information de payement</h1>
+        <form action="index.html">
+
+            <p>
+            <label for="name">Nom de facturation</label>
+            <input type="text" name="name" id="name" onchange="name_capitalize()" required>
+            </p>
+
+            <p>Adresse de facturation </p>
+            <p id="adresse">
+            <label for="postalcode">Code postal : </label>
+            <input type="text" name="postalcode" id="postalcode" required>
+            <label for="city">Ville : </label>
+            <input type="text" name="city" id="city" required>
+            <label for="street">Adresse : </label>
+            <input type="text" name="street" id="street" required>
+            </p>
+
+            <p>
+            <label for="email">adresse email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">numero de telephone</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder=" 00 00 00 00 00" onchange="number_phone_space()" required>
+            </p>
+
+            <p>
+            <label for="bankcarte">numero de carte</label>
+            <input type="text" name="bankcarte" id="bankcarte" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" placeholder="0000 0000 0000 0000" onchange="number_carte_space()" required>
+            </p>
+
+            <p>
+            <label for="monthcarte">date d'expiration</label>
+            <input type="text" name="monthcarte" id="monthcarte" pattern="[0-9]{2}/[0-9]{2}" placeholder="00/00" onchange="date_carte()" required>
+
+            <label for="CVC">CVC</label>
+            <input type="text" name="CVC" id="CVC" pattern="[0-9]{3}" placeholder="000" required>
+            </p>
+
+            <p>
+            <input class="button" type = "submit" onclick="data()" value = "valider">
+            <input class="button" type = "reset" value = "Réinitialiser" >
+            </p>
+        </form>
+    </section>
+    
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* HEADER
+Description : "reservation" is a page where customers can choose date, options and others for their future travel. Here is its style.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : Beginning */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: lightblue;
+}
+
+*{
+    font-family: "Optima", sans-serif;
+    
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+
+label{
+    padding: 5px 0px;
+}
+
+input{
+    width: 15%;
+    border-color: black;
+}
+
+
+img{
+    border-radius: 10px;
+    width : 80%;
+}
+
+#description_travel{
+    background-color: white;
+    color: black;
+    padding: 15px 15px;
+    border-style: solid;
+    text-align: justify;
+    
+}
+
+h1, h2, h3{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+}
+
+#price_night{
+    font-weight: bold;
+}
+
+.button { 
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #other_travel{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  #other_travel > p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title_travel{
+    text-transform: capitalize;
+  }

@@ -1,0 +1,73 @@
+<!--HEADER
+Description : "index" is the main page of a booking site of a travel agency.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : Gallery, dest tracking on the earth, reverse video, swapping images on mouseover, background images alternating themselves-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Principal</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- This code is inspired from https://jqueryui.com/slider/#range -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> must be included in the last script--> 
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- End of the code inspired -->
+
+    <script type = "text/javascript" src = "../js/credentials.js"></script>
+    <script type = "text/javascript" src = "../js/trip.js"></script>
+    <script type = "text/javascript" src="../js/database.js"></script>
+    <script type = "text/javascript" src = "../js/template_dest_package.js"></script>
+	<script type = "text/javascript" src="../js/index.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+    <!-- This code is inspired from https://jqueryui.com/slider/#range -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- End of the code inspired -->
+</head>
+<body>
+    <header>
+    </header>
+
+    <!-- begin a planet with destination -->
+    <div id="global_view"> <!--There were supposed to be the dest showed on the Earth, not finished-->
+        <video id="turning_earth" loop autoplay>
+            <source src="../videos/R_Earth_slow_1080p.mp4" type="video/mp4">
+        The video is not supported by your browser.
+        </video>
+    </div>
+
+    <div id = "filter_div">
+        <button class="filter_btn" id="city_only_btn" onclick="city_only()">En ville</button>
+        <button class="filter_btn" id="out_city_btn" onclick="out_city_only()">Hors agglomération</button>
+        <button class="filter_btn" id="by_price_btn" onclick="by_price()">Par prix</button>
+        <div id="filter3">
+            <p>Fourchette de prix par nuit :</p>
+            <p>min <input type="text" id="price_min"> max <input type="text" id="price_max"></p>
+        <div id="slider-range"></div>
+        </div>
+    </div>
+
+    <div id = "classic_view">
+        <div class="dest_list" id="dest_list"> <!--maybe not the same id and class-->
+            <template id="dest_template">
+            <div class="dest_ad" id="dest_{{dest_id}}">
+                <a href="reservation.html?id={{dest_id}}">
+                    <img class="dest_picture" src="../images/{{image_dest}}.jpg" alt="{{image_desc}}">
+                </a>
+                <p class="dest_name" id = 'temp_{{dest_id}}'>{{dest_name}} : Il y fait actuellement {{temp}} °C</p>
+            </div>
+            <!-- <span>test image_src = {{image_dest}}, alt = {{image_desc}}, id = {{id}}</span> -->
+            </template>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+[
+    {
+        "_dest":"berlin",
+        "_option_dictio":{"brkfst":true,"pet":false},
+        "_price_dictio":{"by_n":250,"brkfst":15},
+        "_img_dictio":{"monument":["berlin_monument","Monument à Berlin"]},
+        "_is_city":true,
+        "_latitude":52.5243700,
+        "_longitude":13.4105300,
+        "_desc": "Un voyage de luxe à Berlin vous ferait découvrir la gastronomie raffinée des restaurants étoilés Michelin, vous offrirait des expériences culturelles exclusives comme des visites privées des musées et des concerts dans des lieux emblématiques, le tout accompagné de services sur mesure incluant des transferts privés en limousine ou en hélicoptère pour une expérience haut de gamme et inoubliable."
+    },
+    {
+        "_dest":"gizeh",
+        "_option_dictio":{"brkfst":true,"pet":true},
+        "_price_dictio":{"by_n":200,"brkfst":15},
+        "_img_dictio":{"monument":["giza_monument","Monument à Gizeh"]},
+        "_is_city":false,
+        "_latitude":30.0080800,
+        "_longitude":31.2109300,
+        "_desc": "Un séjour de luxe à Gizeh vous offrirait des vues spectaculaires sur les pyramides depuis des hôtels de renom. Vous vivriez des visites privées des pyramides et du Sphinx avec des guides experts, des dîners gastronomiques dans des restaurants offrant des vues imprenables, et un confort absolu avec des services sur mesure comme des transferts privés et des expériences de bien-être haut de gamme."
+    },
+    {
+        "_dest":"haiti",
+        "_option_dictio":{"brkfst":true,"pet":true},
+        "_price_dictio":{"by_n":300,"brkfst":15},
+        "_img_dictio":{"beach":["haiti_beach","Plage de Haiti"]},
+        "_is_city":false,
+        "_latitude":19.054426,
+        "_longitude":-73.045971,
+        "_desc": "Un séjour luxueux à Haïti vous réserve des excursions privées vers des sites naturels exceptionnels, une cuisine raffinée fusionnant saveurs locales et internationales, et des services personnalisés incluant des transferts privés et des moments de détente dans des spas de prestige."
+    },
+    {
+        "_dest":"monaco",
+        "_option_dictio":{"brkfst":true,"pet":false},
+        "_price_dictio":{"by_n":500,"brkfst":15},
+        "_img_dictio":{"street":["monaco_street","Rue de Monaco"]},
+        "_is_city":true,
+        "_latitude":43.738348,
+        "_longitude":7.424451,
+        "_desc": "Un voyage de luxe à Monaco vous offre l'opportunité de séjourner dans des hôtels prestigieux offrant des vues somptueuses sur la Méditerranée. Vous pourrez vous divertir au Casino de Monte-Carlo, découvrir des restaurants étoilés, explorer la culture locale dans des lieux emblématiques, et profiter de services exclusifs comme des transferts en voiture de luxe et des expériences de bien-être dans des spas haut de gamme."
+    },
+    {
+        "_dest":"new york",
+        "_option_dictio":{"brkfst":true,"pet":false},
+        "_price_dictio":{"by_n":250,"brkfst":15},
+        "_img_dictio":{"street":["new_york_street","Rue de New York"]},
+        "_is_city":true,
+        "_latitude":40.712784,
+        "_longitude":-74.005941,
+        "_desc": "Un voyage luxueux à New York vous offre des séjours dans des hôtels emblématiques offrant des vues époustouflantes. Profitez de la gastronomie raffinée dans des restaurants renommés, des expériences culturelles uniques avec des visites privées et des spectacles à Broadway, le tout accompagné de services exclusifs comme des soins de bien-être dans des spas haut de gamme et des transferts en limousine pour explorer la ville."
+    },
+    {
+        "_dest":"paris",
+        "_option_dictio":{"brkfst":true,"pet":false},
+        "_price_dictio":{"by_n":200,"brkfst":15},
+        "_img_dictio":{"monument":["paris_monument","Monument de Paris"]},
+        "_is_city":true,
+        "_latitude":48.866667,
+        "_longitude":2.333333,
+        "_desc": "Un séjour luxueux à Paris vous offre des hôtels emblématiques, une gastronomie étoilée, des visites privées des musées et des spectacles culturels, le tout accompagné de services exclusifs incluant des promenades en voiture de luxe, des spas prestigieux et des boutiques de haute couture pour des expériences uniques."
+    },
+    {
+        "_dest":"sydney",
+        "_option_dictio":{"brkfst":true,"pet":false},
+        "_price_dictio":{"by_n":400,"brkfst":10},
+        "_img_dictio":{"monument":["sydney_monument","Monument de Sydney"]},
+        "_is_city":true,
+        "_latitude":-33.8678500,
+        "_longitude":151.2073200,
+        "_desc": "À Sydney, un voyage de luxe comprendrait des séjours dans des hôtels offrant des vues sur l'Opéra, des dîners gastronomiques, des visites culturelles privées, des expériences exclusives telles que des croisières privées et des soins dans des spas haut de gamme."
+    },
+    {
+        "_dest":"tokyo",
+        "_option_dictio":{"brkfst":true,"pet":false},
+        "_price_dictio":{"by_n":300,"brkfst":10},
+        "_img_dictio":{"street":["tokyo_street","Rue de Tokyo"]},
+        "_is_city":true,
+        "_latitude":35.6895000,
+        "_longitude":139.6917100,
+        "_desc": "À Tokyo, un voyage luxueux inclurait des séjours dans des hôtels offrant une vue imprenable, des dîners dans des restaurants étoilés Michelin, des visites privées de sites culturels, des services exclusifs comme des promenades en voiture de luxe, des moments de détente dans des onsens traditionnels et des achats dans des quartiers à la mode pour une expérience inoubliable de tradition et de modernité."
+    }
+]
+
+        

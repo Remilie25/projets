@@ -1,0 +1,55 @@
+<!--HEADER
+Description : "contenu du panier" is a page where customers can see what they are about to book.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : finish backbone, js : delete_travel with parameter-->
+
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenu du panier</title>
+    <link rel = "stylesheet" type="text/css" href = "../css/contenu_du_panier.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "../js/trip.js"></script>
+    <script type = "text/javascript" src = "../js/trip_booking.js"></script>
+    <script type="text/javascript" src="../js/database.js"></script>
+    <script type = "text/javascript" src = "../js/template_dest_package.js"></script>
+	<script type = "text/javascript" src = "../js/contenu_du_panier.js" defer></script>
+</head>
+<body>
+    <header>
+    </header>
+
+    <h1>contenu du panier</h1>
+
+    <div class = "dest_list" id="dest_list">
+        <template id="dest_template">
+            <div class = "dest_in_basket" id = "dest_{{dest_id}}">
+                <h2>{{dest_name}}</h2>
+                <div class = "dest_data">
+                    <img class = "preview_picture" id = "preview_picture_{{dest_id}}" src = "../images/{{image_dest}}.jpg" alt="{{image_desc}}">
+                    <div class = "desc">
+                    <p id = "desc_{{dest_id}}">{{desc}}</p>
+                    <p>Voyage pour {{grown_up}} adultes et {{children}} enfants</p>
+                    <p>Début du voyage : {{from}}, fin du voyage : {{end}}, {{breakfast}} petit déjeuner</p>
+                    </div>
+                    <button class = "del_travel" onclick="del_dest_properly('{{dest_id}}')">x</button>
+                </div>
+            </div>
+        </template>
+    </div>
+
+
+    <div id="total">
+        <p id="total">Total : {{$$}}</p> 
+    </div>
+
+    <a href="confirmation_de_commande.html" id="pay"><p > Payer </p></a>
+
+<footer>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* HEADER
+Description : "A propos & contact" is a page that describes agency profile. Here is its style.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : Beginning */
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: lightblue;
+    height: 100%;
+}
+
+*{
+    font-family: "Optima", sans-serif;
+    
+}
+
+
+
+section{
+    height: 100%;
+
+}
+
+#mail
+{
+  height: 200px;
+  width: 500px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20 px 20 px;
+}
+
+input{
+    width: 20%;
+    border-color: black;
+}
+
+p{
+    text-align: justify;
+}
+
+div{
+    background-color: rgba(224, 217, 203, 0.69);
+    color: black;
+    padding: 10px 20px;
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2,h3,h4,h5,h6{
+    text-decoration: underline;
+}
+
+#we_are{
+    font-weight: bold;
+
+}
+
+
+.button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }

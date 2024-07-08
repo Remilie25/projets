@@ -1,0 +1,17 @@
+/* HEADER
+Description : Definition of trip_table. Requires trip.js to be work.
+Date : 04/12/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO :  */
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

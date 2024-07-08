@@ -1,0 +1,73 @@
+<!--HEADER
+Description : "A propos & contact" is a page that describes agency profile.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : Beginning-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos & Contact</title>
+    <link rel="stylesheet" href="../css/a_propos_&_contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/a_propos_&_contact.js" defer></script>
+</head>
+<body>
+
+    <header></header>
+    
+    <section><!-- text of this party create by ChatGPT-->
+        <h1>Information sur notre agence de voyage</h1>
+        <h2>Qui sommes-nous ?</h2>
+        <p id = "we_are">
+            Nous sommes une équipe dévouée à offrir des expériences de voyage exclusives pour une clientèle exigeante et fortunée.
+        </p>
+        <div>
+            <h3>Ce que nous offrons</h3>
+            <p> - Destinations exclusives : Des lieux prestigieux et des expériences uniques, adaptés aux goûts les plus sophistiqués.</p>
+            <p> 
+                - Service sur mesure : Des voyages personnalisés, conciergerie 24/7, et un souci constant du détail 
+                pour créer des moments inoubliables.
+            </p>
+        </div>
+        <p></p>
+        <div>
+            <h4>Notre engagement</h4>
+
+            <p> 
+                - Excellence absolue : Nous visons l'exceptionnel à chaque étape, offrant discrétion,
+                 service irréprochable et expériences uniques.
+            </p>
+
+            <p> 
+                - Accès privilégié : Accédez à des destinations et expériences exclusives,
+                 pour des voyages qui transcendent les attentes.
+            </p>
+
+            <p>
+                Qu'il s'agisse de séjours sophistiqués, d'aventures exclusives ou de moments privilégiés,
+                 notre agence de voyage haut de gamme est là pour réaliser vos rêves de voyage les plus exquis, avec un service incomparable.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h5>Nous contacte directement :</h5>
+        
+        <h6>Nos contact:</h6>
+            <p>Adresse : 29 Avenue De L'Atlantique, Lyon 69000</p>
+            <p>Tel  : <a href="tel: 02 29 56 22 35?call">02 29 56 22 35</a></p>
+        
+        <form action="a_propos_&_contact.html">
+            <label for="mail" >envoyer un mail :</label>
+            <textarea  id = "mail" name="mail">Bonjour, je souhaiterais obtenir des renseignements sur </textarea>
+            <input class="button" type="button" onclick="create_email()" value="Envoyer">
+        </form>
+
+    </section>
+
+    <footer></footer>
+</body>
+</html>

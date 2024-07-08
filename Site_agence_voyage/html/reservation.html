@@ -1,0 +1,100 @@
+<!--HEADER
+Description : "reservation" is a page where customers can choose date, options and others for their future travel.
+Date : 09/10/23
+Authors : De Pretto Remi, Aussant Esteban
+TO DO : Beginning-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="../css/reservation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src = "../js/trip.js"></script>
+    <script src="../js/trip_booking.js"></script>
+    <script src = "../js/database.js"></script>
+    <script src="../js/reservation.js" defer></script>
+
+</head>
+<body>
+
+    <header></header>
+
+    <section>
+        <h1 id="title_travel" class="title_travel"></h1>
+
+        <img id="imgtravel" src= "" alt="photo destination"> 
+
+        <p id='description_travel'></p>
+        <p id='price_night'></p>
+
+    </section>
+
+    <h2>options</h2>
+
+    <form action="contenu_du_panier.html" id="options">
+
+        <label for="from_date">Date de départ :</label>
+        <input type="date" name="from_date" id="from_date" onchange="price(); date_valid()" required>
+
+        <label for="to_date">Date de retour :</label> 
+        <input type="date" name="to_date" id="to_date" onchange="price(); date_valid()" required>
+
+        <label for="number_adults">Nombre d'adultes :</label>
+        <input type="number" name="number_adults" id="number_adults" min="1" value="1" onchange="price(); children_alone()" required>
+
+        <label for="number_children">Nombre d'enfants (40% du prix d'un)(-12 ans) :</label>
+        <input type="number" name="number_children" id="number_children" min="0" value="0" onchange="price(); children_alone()" required>
+        
+        <div>
+            <label for="breakfast">Petit-déjeuner (15€ par personne) :</label>
+            <input type="checkbox" name="breakfast" id="breakfast" onclick="price()">
+        </div>
+
+        <div id="pet_option">
+            <label for="pet">Animal de compagnie (20€) :</label>
+            <input type="checkbox" name="pet" id="pet" onclick="price()">
+        </div>
+
+        <p id='price_travel'>Coût : </p>
+
+        <p>
+            <input class = "button" type = "submit" onclick = "data()" value = "Valider">
+            <input class = "button" type = "reset"  value = "Réinitialiser">
+        </p>
+
+    </form>
+
+    <h3>Autre voyage à voir</h3>
+
+    <section id="other_travel">
+        
+    <div>
+        <a href="" id="travel1">
+            <img id="travel_img1" src="" alt="photo autre voyage 1">
+        </a>
+        <p id="travel_title1" class="title_travel"></p>
+    </div>
+
+    <div>
+        <a href="" id="travel2">
+            <img id="travel_img2" src="" alt="photo autre voyage 2">
+        </a>
+        <p id="travel_title2" class="title_travel"></p>
+    </div>
+
+    <div>
+        <a href="" id="travel3">
+            <img id="travel_img3" src="" alt="photo autre voyage 3">
+        </a>
+        <p id="travel_title3" class="title_travel"></p>
+    </div>
+
+    </section>    
+
+    <footer></footer>
+
+</body>
+</html>

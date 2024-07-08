@@ -1,0 +1,222 @@
+<!---#copyright 2023 DE PRETTO REMI--->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Remilie's poker</title>
+	<link rel="stylesheet" type="text/css" href="./poker.css">
+	<script type="text/javascript" src="./poker_client.js"></script>
+</head>
+<body id="body">
+<img class="background" id="background" src="./table poker1.png">
+<div class="NivBB">
+
+<div class="hudInfoLabel">
+<span id="hudInfoLabel">Niveau</span>
+<span id="currentLevel">1</span>
+<span id="nextLevelCountdown" class="hudInfoValue">7:00</span><br/>
+</div>
+<div>
+
+<span class="hudInfoLabel">Blindes</span>
+<span id="currentBlinds" class="hudInfoValue2">10/20</span>
+</div>
+<div>
+
+<span class="hudInfoLabel">Suivant</span>
+<span id="nextBlinds" class="hudInfoValue2">15/30</span>
+</div>
+</div>
+
+<div>
+<span class="cEAJ">Temps restant :</span>
+<span id="VcEAJ" class="VcEAJ">30</span>
+</div>
+
+<!-- <div> -->
+<!-- <span class="TEST">TEST</span> -->
+<!-- </div> -->
+
+<tr>
+	<td align="right"></td>
+	<td><input type="text" class="commande" name="commande" id="commande" size="22%">
+	<button class="ok" type="button" onclick="ok()">    ok	</button></td>
+</tr>
+
+<button class="BB" type="button" onclick="BBF()">  BB	</button></td>
+
+<br/>
+
+<div class="cartes">
+<img class="T1" id="T1" src="./cartes/dos.png">
+<img class="T2" id="T2" src="./cartes/dos.png">
+<img class="T3" id="T3" src="./cartes/dos.png">
+<img class="T4" id="T4" src="./cartes/dos.png">
+<img class="T5" id="T5" src="./cartes/dos.png">
+<img class="J11" id="J11" src="./cartes/dos.png">
+<img class="J12" id="J12" src="./cartes/dos.png">
+<img class="J21" id="J21" src="./cartes/dos.png">
+<img class="J22" id="J22" src="./cartes/dos.png">
+<img class="J31" id="J31" src="./cartes/dos.png">
+<img class="J32" id="J32" src="./cartes/dos.png">
+<img class="J41" id="J41" src="./cartes/dos.png">
+<img class="J42" id="J42" src="./cartes/dos.png">
+<img class="J51" id="J51" src="./cartes/dos.png">
+<img class="J52" id="J52" src="./cartes/dos.png">
+<img class="J61" id="J61" src="./cartes/dos.png">
+<img class="J62" id="J62" src="./cartes/dos.png">
+<img class="J71" id="J71" src="./cartes/dos.png">
+<img class="J72" id="J72" src="./cartes/dos.png">
+<img class="J81" id="J81" src="./cartes/dos.png">
+<img class="J82" id="J82" src="./cartes/dos.png">
+<!-- <img class="J11C" id="J11C" src="./cartes/As_pic.png"> -->
+<!-- <img class="J12C" id="J12C" src="./cartes/dos.png"> -->
+<img class="J21C" id="J21C" src="./cartes/dos.png">
+<img class="J22C" id="J22C" src="./cartes/dos.png">
+<img class="J31C" id="J31C" src="./cartes/dos.png">
+<img class="J32C" id="J32C" src="./cartes/dos.png">
+<img class="J41C" id="J41C" src="./cartes/dos.png">
+<img class="J42C" id="J42C" src="./cartes/dos.png">
+<img class="J51C" id="J51C" src="./cartes/dos.png">
+<img class="J52C" id="J52C" src="./cartes/dos.png">
+<img class="J61C" id="J61C" src="./cartes/dos.png">
+<img class="J62C" id="J62C" src="./cartes/dos.png">
+<img class="J71C" id="J71C" src="./cartes/dos.png">
+<img class="J72C" id="J72C" src="./cartes/dos.png">
+<img class="J81C" id="J81C" src="./cartes/dos.png">
+<img class="J82C" id="J82C" src="./cartes/dos.png">
+
+</div>
+
+
+<div class="TPOTHUD">
+<span id="TPOT" class="TPOTmot">Total Pot :</span>
+<span id="TVPOT" class="TVPOT" >30</span>
+</div>
+<div class="POTHUD">
+<span id="POT" class="POTmot">Pot :</span>
+<span id="VPOT" class="VPOT" >30</span>
+</div>
+
+
+<div class="Buttons" id="Buttons">
+<button class="Fold" id="Fold"
+		size="10"
+        type="button"
+		onclick="Fold()">
+    Fold
+</button>
+<button class="Check"
+        type="button"
+		onclick="Check()">
+    Check
+</button>
+<button class="Pay"
+        type="button"
+		onclick="Pay()">
+		
+    Pay <span id="PayV">1</span>
+</button>
+
+<button class="Raise"
+        type="button"
+		onclick="Raise()">
+    Raise <span id="RaiseV"></span>
+</button>
+
+<tr>
+	<td><input type="number" name="montant" id="montant" size="7"></td>
+	<button class="Set"
+        type="button"
+		onclick="Fmise('set')">
+    Set
+</button>
+	<td><div id="montant_err" class="erreur"></div></td>
+</tr>
+
+<br/>
+<button class="POT"
+        type="button"
+		onclick="Fmise('1/2')">
+    1/2 POT
+</button>
+<button class="POT"
+        type="button"
+		onclick="Fmise('2/3')">
+    2/3 POT
+</button>
+<button class="POT"
+        type="button"
+		onclick="Fmise('3/4')">
+    3/4 POT
+</button>
+<button class="POT"
+        type="button"
+		onclick="Fmise('Pot')"
+		>
+    POT
+</button>
+<button class="Tapis"
+        type="button"
+		onclick="Fmise('All')">
+    All in
+</button>
+</div>
+
+
+<div class="Player">
+
+<div class="Player1" id="Player1">
+<span id="Pseudo1" class="Pseudo1">Anonymous Player</span><br/>
+<span id="Tune1" class="Tune1">1500</span>
+</div>
+<div class="MPlayer1" id="MPlayer1"></div>
+
+
+<div class="Player2" id="Player2">
+<span id="Pseudo2" class="Pseudo2">Anonymous Player</span><br/>
+<span id="Tune2" class="Tune2">1500</span>
+</div>
+<div class="MPlayer2" id="MPlayer2"></div>
+
+<div class="Player3" id="Player3">
+<span id="Pseudo3" class="Pseudo3">Anonymous Player</span><br/>
+<span id="Tune3" class="Tune3">1500</span>
+</div>
+<div class="MPlayer3" id="MPlayer3"></div>
+
+<div class="Player4" id="Player4">
+<span id="Pseudo4" class="Pseudo4">Anonymous Player</span><br/>
+<span id="Tune4" class="Tune4">1500</span>
+</div>
+<div class="MPlayer4" id="MPlayer4"></div>
+
+<div class="Player5" id="Player5">
+<span id="Pseudo5" class="Pseudo5">Anonymous Player</span><br/>
+<span id="Tune5" class="Tune5">1500</span>
+</div>
+<div class="MPlayer5" id="MPlayer5"></div>
+
+<div class="Player6" id="Player6">
+<span id="Pseudo6" class="Pseudo6">Anonymous Player</span><br/>
+<span id="Tune6" class="Tune6">1500</span>
+</div>
+<div class="MPlayer6" id="MPlayer6"></div>
+
+<div class="Player7" id="Player7">
+<span id="Pseudo7" class="Pseudo7">Anonymous Player</span><br/>
+<span id="Tune7" class="Tune7">1500</span>
+</div>
+<div class="MPlayer7" id="MPlayer7"></div>
+
+<div class="Player8" id="Player8">
+<span id="Pseudo8" class="Pseudo8">Anonymous Player</span><br/>
+<span id="Tune8" class="Tune8">1500</span>
+</div>
+<div class="MPlayer8" id="MPlayer8"></div>
+
+</div>
+
+
+
+</body>
+</html>
